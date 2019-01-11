@@ -2,6 +2,9 @@ var express = require("express");
 var app = express();
 var mysql = require('mysql');
 
+//connect to port 8080
+const PORT = process.env.PORT || "8080";
+
 // connecting to mysql to access 'burgers_db' 
 var connection = mysql.createConnection({
 	host: "localhost",
